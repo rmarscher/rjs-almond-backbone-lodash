@@ -23,7 +23,7 @@ require.config({
             exports: '_'
         },
         'backbone': {
-            deps: ['lodash', 'jquery'],
+            deps: ['underscore', 'jquery'],
             exports: 'Backbone'
         },
         'layoutmanager': {

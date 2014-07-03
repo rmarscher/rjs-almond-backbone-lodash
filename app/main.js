@@ -1,7 +1,7 @@
 require([
-    'layoutmanager'
-], function( layoutmanager ) {
+    'backbone'
+], function( Backbone ) {
 
-    console.log( layoutmanager );
+    console.log( Backbone );
 
 });
