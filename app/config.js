@@ -11,23 +11,21 @@ require.config({
 
     paths: {
         // Libraries.
-        'jquery':            'vendor/jquery/dist/jquery',
-        'lodash':            'vendor/lodash/dist/lodash.underscore',
-        // 'underscore':        'vendor/lodash/dist/lodash.underscore',
-        'backbone':          'vendor/backbone/backbone',
-        'layoutmanager':     'vendor/layoutmanager/backbone.layoutmanager',
+        'almond':        'vendor/almond/almond',
+        'jquery':        'vendor/jquery/dist/jquery',
+        'lodash':        'vendor/lodash/dist/lodash.underscore',
+        // 'underscore': 'vendor/lodash/dist/lodash.underscore',
+        'backbone':      'vendor/backbone/backbone',
+        'layoutmanager': 'vendor/layoutmanager/backbone.layoutmanager',
     },
 
     shim: {
-        'lodash': {
-            exports: '_'
-        },
         'backbone': {
-            deps: ['underscore', 'jquery'],
+            deps: ['lodash', 'jquery'],
             exports: 'Backbone'
         },
         'layoutmanager': {
-            deps: ['jquery', 'underscore', 'backbone'],
+            deps: ['jquery', 'lodash', 'backbone'],
             exports: 'Backbone.Layout'
         }
     }

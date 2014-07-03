@@ -146,11 +146,12 @@ module.exports = function( grunt ) {
                     //or require.config({}) call found in that file will be used.
                     mainConfigFile: 'app/config.js',
 
-                    include: 'main',
+                    // include: 'main',
+                    include: 'config',
 
                     out: 'assets/debug/js/require.js',
 
-                    name: 'vendor/almond/almond',
+                    name: 'almond',
                     // name: 'config',
 
                     removeCombined: false,
