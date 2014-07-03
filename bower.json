@@ -1,0 +1,17 @@
+{
+  "name": "rjs-almond-layoutmanager",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shoptology/apps",
+  "authors": [
+    "Rob Marscher <rob@robmarscher.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ]
+}
